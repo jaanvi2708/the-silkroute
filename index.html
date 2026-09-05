@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -13,19 +13,21 @@
   <meta property="og:url" content="https://the-silkroute.com/"/>
   <meta property="og:title" content="Silkroute — A more refined way to acquire what is carefully restricted."/>
   <meta property="og:description" content="A discreet, thoughtfully designed marketplace where regulated and permission-based products can be discovered and acquired with clarity, confidence, and ease."/>
-  <meta property="og:image" content="https://lh3.googleusercontent.com/aida/AEtjO1WSYwLBFF65eOUrqN8djnh8Hg2Guom-8HSDiL4EFXRPu0Pb0r3xInqYlPqR8R5ocmj5M7EL2MBXQN9fo2hUvAxan4WlltbBUa267t3mzu7d-Zne45vDM2i3XuTP6mOf17opQ3RbhXsIsXEA5bRM1_r6kcd_d3hn8auGOJw7Ms8EjO-cICbhcyyQ99gn72sq7EB7XMN9wNPjClDvTFUsTtbAO0GDTLf77a6e2lFPrG-LJDL7Y_lnEyS7RQ"/>
+  <meta property="og:image" content="https://lh3.googleusercontent.com/aida/AEtjO1WCpmPhIa3qVcRBQN1i_lX0uxbpLwhqi7OuJftPcqd5O1XT_xK-gxCuUp-YXdvb20Qb4T9yTmOpye3Y1Va7tBrB_UL6QHIx7pZwaxLn1y5D6qye2xcyVPv1i6xBq8vnL9IJYtMcFaIZiBxXwu46ubV70xk0H8ieXYrgusyRuJFCnXqW2UIXqVJMZmlEgfUJ8GSAfVK5TDJ2a5Qk6cdxT-4HGabXNxxz1kYCQi1Dm8NH8BNOE9sSR4Oj"/>
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:url" content="https://the-silkroute.com/"/>
   <meta property="twitter:title" content="Silkroute — A more refined way to acquire what is carefully restricted."/>
   <meta property="twitter:description" content="A discreet, thoughtfully designed marketplace where regulated and permission-based products can be discovered and acquired with clarity, confidence, and ease."/>
-  <meta property="twitter:image" content="https://lh3.googleusercontent.com/aida/AEtjO1WSYwLBFF65eOUrqN8djnh8Hg2Guom-8HSDiL4EFXRPu0Pb0r3xInqYlPqR8R5ocmj5M7EL2MBXQN9fo2hUvAxan4WlltbBUa267t3mzu7d-Zne45vDM2i3XuTP6mOf17opQ3RbhXsIsXEA5bRM1_r6kcd_d3hn8auGOJw7Ms8EjO-cICbhcyyQ99gn72sq7EB7XMN9wNPjClDvTFUsTtbAO0GDTLf77a6e2lFPrG-LJDL7Y_lnEyS7RQ"/>
+  <meta property="twitter:image" content="https://lh3.googleusercontent.com/aida/AEtjO1WCpmPhIa3qVcRBQN1i_lX0uxbpLwhqi7OuJftPcqd5O1XT_xK-gxCuUp-YXdvb20Qb4T9yTmOpye3Y1Va7tBrB_UL6QHIx7pZwaxLn1y5D6qye2xcyVPv1i6xBq8vnL9IJYtMcFaIZiBxXwu46ubV70xk0H8ieXYrgusyRuJFCnXqW2UIXqVJMZmlEgfUJ8GSAfVK5TDJ2a5Qk6cdxT-4HGabXNxxz1kYCQi1Dm8NH8BNOE9sSR4Oj"/>
 
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
   <style>
     @layer base {
       html, body { margin: 0; padding: 0; background-color: #ede5dc; color: #2a221b; }
@@ -36,6 +38,19 @@
     ::-webkit-scrollbar { display: none; }
     .font-serif { font-family: 'EB Garamond', serif; }
     .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    
+    html.lenis, html.lenis body {
+      height: auto;
+    }
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+    }
+    .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+    .lenis.lenis-stopped {
+      overflow: hidden;
+    }
   </style>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
@@ -82,9 +97,9 @@
   </script>
 </head>
 <body class="bg-[#ede5dc] font-body text-espresso antialiased selection:bg-terracotta/20 selection:text-espresso relative min-h-screen">
-<!-- Ambient Tactile Canvas with background texture -->
+<!-- Ambient Tactile Canvas with sculptural relief impasto wall art texture -->
 <div aria-hidden="true" class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-  <div class="absolute -inset-[5%] w-[110%] h-[110%] bg-cover bg-center transition-transform duration-1000 ease-out opacity-[0.24] mix-blend-multiply filter contrast-110 saturate-[0.9]" id="tactile-bg" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WSYwLBFF65eOUrqN8djnh8Hg2Guom-8HSDiL4EFXRPu0Pb0r3xInqYlPqR8R5ocmj5M7EL2MBXQN9fo2hUvAxan4WlltbBUa267t3mzu7d-Zne45vDM2i3XuTP6mOf17opQ3RbhXsIsXEA5bRM1_r6kcd_d3hn8auGOJw7Ms8EjO-cICbhcyyQ99gn72sq7EB7XMN9wNPjClDvTFUsTtbAO0GDTLf77a6e2lFPrG-LJDL7Y_lnEyS7RQ');"></div>
+  <div class="absolute -inset-[5%] w-[110%] h-[110%] bg-cover bg-center opacity-[0.28] mix-blend-multiply filter contrast-110 saturate-[0.85] will-change-transform" id="tactile-bg" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WCpmPhIa3qVcRBQN1i_lX0uxbpLwhqi7OuJftPcqd5O1XT_xK-gxCuUp-YXdvb20Qb4T9yTmOpye3Y1Va7tBrB_UL6QHIx7pZwaxLn1y5D6qye2xcyVPv1i6xBq8vnL9IJYtMcFaIZiBxXwu46ubV70xk0H8ieXYrgusyRuJFCnXqW2UIXqVJMZmlEgfUJ8GSAfVK5TDJ2a5Qk6cdxT-4HGabXNxxz1kYCQi1Dm8NH8BNOE9sSR4Oj');"></div>
   <div class="absolute inset-0 bg-gradient-to-b from-[#ede5dc]/60 via-[#e8ddd2]/40 to-[#e2d5c8]/80 pointer-events-none"></div>
   <div class="absolute inset-0 bg-radial from-transparent via-[#ebdccf]/30 to-[#ddc7b4]/40 pointer-events-none"></div>
 </div>
@@ -146,7 +161,7 @@
 
   <!-- Scroll 2: The Proposition / Explanatory -->
   <section class="w-full min-h-screen relative flex items-center justify-center py-20 px-6 md:px-12 lg:px-20 bg-[#dfd0c1]/80 border-y border-[#cbb7a4]/60 overflow-hidden" id="the-proposition">
-    <div class="absolute inset-0 z-0 opacity-[0.32] mix-blend-multiply bg-cover bg-center pointer-events-none filter contrast-110" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WSYwLBFF65eOUrqN8djnh8Hg2Guom-8HSDiL4EFXRPu0Pb0r3xInqYlPqR8R5ocmj5M7EL2MBXQN9fo2hUvAxan4WlltbBUa267t3mzu7d-Zne45vDM2i3XuTP6mOf17opQ3RbhXsIsXEA5bRM1_r6kcd_d3hn8auGOJw7Ms8EjO-cICbhcyyQ99gn72sq7EB7XMN9wNPjClDvTFUsTtbAO0GDTLf77a6e2lFPrG-LJDL7Y_lnEyS7RQ');"></div>
+    <div class="absolute inset-0 z-0 opacity-[0.28] mix-blend-multiply bg-cover bg-center pointer-events-none filter contrast-110" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WCpmPhIa3qVcRBQN1i_lX0uxbpLwhqi7OuJftPcqd5O1XT_xK-gxCuUp-YXdvb20Qb4T9yTmOpye3Y1Va7tBrB_UL6QHIx7pZwaxLn1y5D6qye2xcyVPv1i6xBq8vnL9IJYtMcFaIZiBxXwu46ubV70xk0H8ieXYrgusyRuJFCnXqW2UIXqVJMZmlEgfUJ8GSAfVK5TDJ2a5Qk6cdxT-4HGabXNxxz1kYCQi1Dm8NH8BNOE9sSR4Oj');"></div>
     <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
       <span class="text-[10px] uppercase tracking-[0.35em] text-terracotta font-semibold mb-6">The Proposition</span>
       <p class="text-base md:text-lg text-sand-800 font-light leading-relaxed max-w-2xl mb-8">There are certain products that demand more than a simple transaction. They require permissions, licenses, verification, and careful handling. For most, this process feels slow, opaque, and unnecessarily complicated.</p>
@@ -214,24 +229,51 @@
   </div>
 </footer>
 
+<!-- Lenis Smooth Scroll Library -->
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 <script>
-  // Tactile Parallax Drift on Scroll
-  (function() {
-    const bg = document.getElementById('tactile-bg');
-    if (!bg) return;
-    let ticking = false;
-    window.addEventListener('scroll', function() {
-      if (!ticking) {
-        window.requestAnimationFrame(function() {
-          const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-          const parallaxOffset = scrollY * 0.04;
-          bg.style.transform = `translate3d(0, -${parallaxOffset}px, 0) scale(1.02)`;
-          ticking = false;
-        });
-        ticking = true;
+  // Initialize Lenis with luxury physics & smooth inertia
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    wheelMultiplier: 1.0,
+    touchMultiplier: 2.0,
+    infinite: false,
+  });
+
+  const bg = document.getElementById('tactile-bg');
+
+  // Unified animation frame loop for silky smooth scrolling & parallax
+  function raf(time) {
+    lenis.raf(time);
+    if (bg) {
+      const scrollY = lenis.scroll;
+      const parallaxOffset = scrollY * 0.05;
+      bg.style.transform = `translate3d(0, -${parallaxOffset}px, 0)`;
+    }
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // Smooth scroll to anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href !== '#') {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          lenis.scrollTo(target, { offset: -20, duration: 1.4 });
+        }
+      } else if (href === '#') {
+        e.preventDefault();
+        lenis.scrollTo(0, { duration: 1.2 });
       }
-    }, { passive: true });
-  })();
+    });
+  });
 </script>
 </body>
 </html>
