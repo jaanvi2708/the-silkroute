@@ -13,14 +13,14 @@
   <meta property="og:url" content="https://the-silkroute.com/"/>
   <meta property="og:title" content="Silkroute — A more refined way to acquire what is carefully restricted."/>
   <meta property="og:description" content="A discreet, thoughtfully designed marketplace where regulated and permission-based products can be discovered and acquired with clarity, confidence, and ease."/>
-  <meta property="og:image" content="https://lh3.googleusercontent.com/aida/AEtjO1WCpmPhIa3qVcRBQN1i_lX0uxbpLwhqi7OuJftPcqd5O1XT_xK-gxCuUp-YXdvb20Qb4T9yTmOpye3Y1Va7tBrB_UL6QHIx7pZwaxLn1y5D6qye2xcyVPv1i6xBq8vnL9IJYtMcFaIZiBxXwu46ubV70xk0H8ieXYrgusyRuJFCnXqW2UIXqVJMZmlEgfUJ8GSAfVK5TDJ2a5Qk6cdxT-4HGabXNxxz1kYCQi1Dm8NH8BNOE9sSR4Oj"/>
+  <meta property="og:image" content="https://the-silkroute.com/assets/ruffle-stream.jpg"/>
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:url" content="https://the-silkroute.com/"/>
   <meta property="twitter:title" content="Silkroute — A more refined way to acquire what is carefully restricted."/>
   <meta property="twitter:description" content="A discreet, thoughtfully designed marketplace where regulated and permission-based products can be discovered and acquired with clarity, confidence, and ease."/>
-  <meta property="twitter:image" content="https://lh3.googleusercontent.com/aida/AEtjO1WCpmPhIa3qVcRBQN1i_lX0uxbpLwhqi7OuJftPcqd5O1XT_xK-gxCuUp-YXdvb20Qb4T9yTmOpye3Y1Va7tBrB_UL6QHIx7pZwaxLn1y5D6qye2xcyVPv1i6xBq8vnL9IJYtMcFaIZiBxXwu46ubV70xk0H8ieXYrgusyRuJFCnXqW2UIXqVJMZmlEgfUJ8GSAfVK5TDJ2a5Qk6cdxT-4HGabXNxxz1kYCQi1Dm8NH8BNOE9sSR4Oj"/>
+  <meta property="twitter:image" content="https://the-silkroute.com/assets/ruffle-stream.jpg"/>
 
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -50,6 +50,21 @@
     }
     .lenis.lenis-stopped {
       overflow: hidden;
+    }
+
+    /* Sculptural Ruffle Side Stream Styles */
+    .ruffle-side-left {
+      mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 98%), linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%);
+      -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 98%), linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%);
+      mask-composite: intersect;
+      -webkit-mask-composite: source-in;
+    }
+
+    .ruffle-side-right {
+      mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 98%), linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%);
+      -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 98%), linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%);
+      mask-composite: intersect;
+      -webkit-mask-composite: source-in;
     }
   </style>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -96,16 +111,29 @@
   }
   </script>
 </head>
-<body class="bg-[#ede5dc] font-body text-espresso antialiased selection:bg-terracotta/20 selection:text-espresso relative min-h-screen">
-<!-- Ambient Tactile Canvas with sculptural relief impasto wall art texture -->
+<body class="bg-[#ede5dc] font-body text-espresso antialiased selection:bg-terracotta/20 selection:text-espresso relative min-h-screen overflow-x-hidden">
+
+<!-- Ambient Warm Canvas with delicate subtle lighting -->
 <div aria-hidden="true" class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-  <div class="absolute -inset-[5%] w-[110%] h-[110%] bg-cover bg-center opacity-[0.32] mix-blend-multiply filter contrast-105 saturate-[0.95] will-change-transform" id="tactile-bg" style="background-image: url('assets/tactile-bg.jpg');"></div>
-  <div class="absolute inset-0 bg-gradient-to-b from-[#ede5dc]/60 via-[#e8ddd2]/40 to-[#e2d5c8]/80 pointer-events-none"></div>
-  <div class="absolute inset-0 bg-radial from-transparent via-[#ebdccf]/30 to-[#ddc7b4]/40 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-[#ede5dc] via-[#e8ddd2] to-[#e4d7ca]"></div>
+  <div class="absolute inset-0 bg-radial from-transparent via-[#ebdccf]/40 to-[#ddc7b4]/30"></div>
+</div>
+
+<!-- Cascading Sculptural 3D Plaster Ruffle Streams on the Sides -->
+<div aria-hidden="true" class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+  <!-- Left Side Sculptural Ruffle Stream: Cascading from top through hero and middle -->
+  <div class="absolute -left-16 sm:-left-8 lg:left-0 top-0 w-[340px] sm:w-[480px] lg:w-[580px] h-[1600px] ruffle-side-left opacity-85 mix-blend-multiply will-change-transform" id="ruffle-stream-left">
+    <div class="w-full h-full bg-contain bg-no-repeat bg-top" style="background-image: url('assets/ruffle-stream.jpg');"></div>
+  </div>
+
+  <!-- Right Side Sculptural Ruffle Stream: Cascading down through middle and bottom launch registry -->
+  <div class="absolute -right-16 sm:-right-8 lg:right-0 top-[900px] w-[340px] sm:w-[480px] lg:w-[580px] h-[1600px] ruffle-side-right opacity-85 mix-blend-multiply scale-x-[-1] will-change-transform" id="ruffle-stream-right">
+    <div class="w-full h-full bg-contain bg-no-repeat bg-top" style="background-image: url('assets/ruffle-stream.jpg');"></div>
+  </div>
 </div>
 
 <!-- Header -->
-<header class="fixed top-0 w-full z-50 bg-[#ebdccf]/80 backdrop-blur-md border-b border-[#c8b7a6]/40 shadow-[0_4px_24px_-8px_rgba(50,35,25,0.06)] transition-all">
+<header class="fixed top-0 w-full z-50 bg-[#ebdccf]/85 backdrop-blur-md border-b border-[#c8b7a6]/40 shadow-[0_4px_24px_-8px_rgba(50,35,25,0.06)] transition-all">
   <div class="h-20 max-w-[88rem] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between">
     <div class="flex items-center gap-4">
       <a class="font-headline text-2xl tracking-[0.28em] uppercase text-espresso hover:text-terracotta transition-colors duration-200" href="#">Silkroute</a>
@@ -131,7 +159,7 @@
       <span>Restricted Acquisition Protocol</span>
     </div>
 
-    <div class="my-auto flex flex-col items-center text-center max-w-4xl py-10 px-4">
+    <div class="my-auto flex flex-col items-center text-center max-w-3xl py-10 px-4 relative z-10">
       <span class="font-headline text-2xl sm:text-3xl text-terracotta italic font-light tracking-wide mb-2">
         Coming Soon
       </span>
@@ -146,7 +174,7 @@
       
       <div class="flex flex-col sm:flex-row items-center gap-5">
         <a class="w-full sm:w-auto px-8 py-3.5 rounded-sm bg-espresso text-[#faf6f0] text-xs uppercase tracking-[0.25em] font-medium hover:bg-terracotta transition-colors duration-300 shadow-md" href="#registry">Request Invitation</a>
-        <a class="w-full sm:w-auto px-8 py-3.5 rounded-sm bg-[#dfcebe]/50 hover:bg-[#d5c2af]/70 text-espresso text-xs uppercase tracking-[0.25em] font-medium transition-colors duration-300 border border-[#c5b19e]/60" href="#the-proposition">The Proposition</a>
+        <a class="w-full sm:w-auto px-8 py-3.5 rounded-sm bg-[#dfcebe]/60 hover:bg-[#d5c2af]/80 text-espresso text-xs uppercase tracking-[0.25em] font-medium transition-colors duration-300 border border-[#c5b19e]/70 backdrop-blur-xs" href="#the-proposition">The Proposition</a>
       </div>
     </div>
 
@@ -159,8 +187,7 @@
   </section>
 
   <!-- Scroll 2: The Proposition / Explanatory -->
-  <section class="w-full min-h-screen relative flex items-center justify-center py-20 px-6 md:px-12 lg:px-20 bg-[#dfd0c1]/80 border-y border-[#cbb7a4]/60 overflow-hidden" id="the-proposition">
-    <div class="absolute inset-0 z-0 opacity-[0.32] mix-blend-multiply bg-cover bg-center pointer-events-none filter contrast-105" style="background-image: url('assets/tactile-bg.jpg');"></div>
+  <section class="w-full min-h-screen relative flex items-center justify-center py-24 px-6 md:px-12 lg:px-20 border-y border-[#cbb7a4]/50" id="the-proposition">
     <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
       <span class="text-[10px] uppercase tracking-[0.35em] text-terracotta font-semibold mb-6">The Proposition</span>
       <p class="text-base md:text-lg text-sand-800 font-light leading-relaxed max-w-2xl mb-8">There are certain products that demand more than a simple transaction. They require permissions, licenses, verification, and careful handling. For most, this process feels slow, opaque, and unnecessarily complicated.</p>
@@ -178,8 +205,8 @@
   </section>
 
   <!-- Scroll 3: The Registry / Invitation -->
-  <section class="w-full min-h-screen relative flex items-center justify-center py-20 px-6 md:px-12 lg:px-20 bg-transparent" id="registry">
-    <div class="max-w-3xl mx-auto flex flex-col items-center text-center my-auto">
+  <section class="w-full min-h-screen relative flex items-center justify-center py-24 px-6 md:px-12 lg:px-20 bg-transparent" id="registry">
+    <div class="max-w-3xl mx-auto flex flex-col items-center text-center my-auto relative z-10">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#dfcebe]/60 border border-goldleaf/40 mb-4">
         <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
         <span class="text-[10px] uppercase tracking-[0.35em] text-sand-900 font-semibold">Early Access Registry</span>
@@ -243,16 +270,23 @@
     infinite: false,
   });
 
-  const bg = document.getElementById('tactile-bg');
+  const ruffleLeft = document.getElementById('ruffle-stream-left');
+  const ruffleRight = document.getElementById('ruffle-stream-right');
 
-  // Unified animation frame loop for silky smooth scrolling & parallax
+  // Unified animation frame loop for silky smooth scrolling & sculptural ruffle parallax
   function raf(time) {
     lenis.raf(time);
-    if (bg) {
-      const scrollY = lenis.scroll;
-      const parallaxOffset = scrollY * 0.05;
-      bg.style.transform = `translate3d(0, -${parallaxOffset}px, 0)`;
+    const scrollY = lenis.scroll;
+    
+    if (ruffleLeft) {
+      const leftOffset = scrollY * 0.08;
+      ruffleLeft.style.transform = `translate3d(0, -${leftOffset}px, 0)`;
     }
+    if (ruffleRight) {
+      const rightOffset = scrollY * 0.12;
+      ruffleRight.style.transform = `translate3d(0, -${rightOffset}px, 0) scaleX(-1)`;
+    }
+
     requestAnimationFrame(raf);
   }
   requestAnimationFrame(raf);
